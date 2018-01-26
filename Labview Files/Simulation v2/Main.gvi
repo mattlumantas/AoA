@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="A2012350E508CFB03F717B66B4A320A6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Main" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="11.25" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="13">
+			<WhileLoop Bounds="-18 70 1240 655" DiagramId="78" Id="77">
+				<LoopIteration Bounds="5 625 15 15" Id="79" />
+				<LoopCondition Bounds="1193 620 15 15" Id="80" />
+				<MethodCall Bounds="243 135 80 30" DomainName="NI.MocCommon" Id="53" Target="transmitted_signal\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="Carrier Freqeuncy" />
+							<Parameter Id="L1" Desc="Sampling Freqeuncy" />
+							<Parameter Id="L2" Desc="Number of Samples" />
+							<Parameter Id="R1" Desc="SwC" />
+							<Parameter Id="R0" Desc="SnoC" />
+							<Parameter Id="R2" Desc="dt" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="Double" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="80 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[]" Direction="Output" Hotspot="80 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Output" Hotspot="80 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<DataAccessor Bounds="573 105 40 15" DataItem="54" Id="55" Label="75" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Wfm(Double)" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="55" Bounds="618 105 81 14" Id="75" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Original Signal</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1108 620 40 15" DataItem="85" Id="86" Label="88" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="86" Bounds="1077 620 26 14" Id="88" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Stop</p.Text>
+				</NodeLabel>
+				<Wire Id="89" Joints="N(86:Value) N(80:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="568 165 40 15" DataItem="257" Id="258" Label="278" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="258" Bounds="613 165 100 14" Id="278" SizeToText="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Transmitted with Carrier(at Carriers Sampling Frequency)</p.Text>
+				</NodeLabel>
+				<BuildWaveformNode Bounds="438 105 40 40" Id="282" />
+				<Wire Id="287" Joints="N(282:output waveform) N(55:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<BuildWaveformNode Bounds="438 105 40 40" Id="288" />
+				<DataAccessor Bounds="163 90 40 15" DataItem="293" Id="294" Label="296" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="294" Bounds="59 90 99 14" Id="296" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Carrier Frequency</p.Text>
+				</NodeLabel>
+				<ComplexToRealImaginary Bounds="368 165 30 30" Id="304" />
+				<Wire Id="310" Joints="N(53:R2) h(56) v(-40) N(282:dt)" xmlns="http://www.ni.com/PlatformFramework" />
+				<BuildArray Bounds="438 165 40 20" Id="313" Terminals="outArray=377, c0t0v=516, c1t0v=514" VerticalChunkCount="2" />
+				<DataAccessor Bounds="163 110 40 15" DataItem="360" Id="358" Label="359" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="358" Bounds="45 110 113 14" Id="359" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Sampling Frequency</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="163 130 40 15" DataItem="365" Id="363" Label="364" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="363" Bounds="48 130 110 14" Id="364" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Number of Samples</p.Text>
+				</NodeLabel>
+				<Wire Id="368" Joints="N(358:Value) h(20) v(35) N(53:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="377" Joints="N(313:outArray) N(258:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="573 220 40 15" DataItem="399" Id="400" Label="420" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="400" Bounds="618 220 147 14" Id="420" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Received Signal with noise</p.Text>
+				</NodeLabel>
+				<MethodCall Bounds="438 220 40 40" DomainName="NI.MocCommon" Id="441" Target="noise_adder\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="Number of Samples" />
+							<Parameter Id="L1" Desc="Real" />
+							<Parameter Id="L2" Desc="Imag" />
+							<Parameter Id="R0" Desc="Received Signal with noise" />
+							<Parameter Id="R1" Desc="Real Signal" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="Int32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<Wire Id="442" Joints="N(363:Value) h(5) v(25) B(2) N(53:L2) B(2) v(65) N(441:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<MethodCall Bounds="523 390 40 50" DomainName="NI.MocCommon" Id="446" Target="Signal\ Delayer\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="signal" />
+							<Parameter Id="L1" Desc="num_signals" />
+							<Parameter Id="L2" Desc="angle" />
+							<Parameter Id="L3" Desc="distance" />
+							<Parameter Id="L4" Desc="Carrier Frequency" />
+							<Parameter Id="R0" Desc="Out" />
+							<Parameter Id="R1" Desc="steering_no_theta" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="ComplexDouble[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<Wire Id="449" Joints="N(945:Value) h(315) v(20) N(446:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="452" Joints="N(950:Value) h(312) v(10) N(446:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="668 390 40 15" DataItem="499" Id="500" Label="501" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="ComplexDouble[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="500" Bounds="713 390 88 14" Id="501" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Delayed Signals</p.Text>
+				</NodeLabel>
+				<Wire Id="505" Joints="N(53:R1) h(10) v(30) N(304:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="514" Joints="N(304:y) h(33) v(-5) N(313:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="516" Joints="N(304:x) N(313:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Multiply Bounds="378 260 30 30" Id="519" Terminals="o=520, c0t0v=1017, c1t0v=523" />
+				<Wire Id="520" Joints="N(519:o) h(25) v(-30) N(441:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="318 280 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="522" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:G6" />
+				</Literal>
+				<Wire Id="523" Joints="N(522:Out) h(15.5) v(-5) N(519:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<MethodCall Bounds="638 430 50 40" DomainName="NI.MocCommon" Id="555" Target="Parameter\ Estimation_Music\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="signals" />
+							<Parameter Id="L1" Desc="steering_no_theta" />
+							<Parameter Id="R0" Desc="Spectrum" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="ComplexDouble[,]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<Wire Id="557" Joints="N(446:R1) h(22) v(40) N(555:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="738 430 40 15" DataItem="558" Id="559" Label="579" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="559" Bounds="783 430 34 14" Id="579" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Graph</p.Text>
+				</NodeLabel>
+				<Wire Id="580" Joints="N(555:R0) N(559:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="123 380 40 15" DataItem="944" Id="945" Label="947" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="945" Bounds="35 380 83 14" Id="947" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Num Receivers</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="123 400 40 15" DataItem="949" Id="950" Label="952" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="950" Bounds="87 400 31 14" Id="952" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Angle</p.Text>
+				</NodeLabel>
+				<Multiply Bounds="333 470 30 45" Id="954" Terminals="o=955, c0t0v=962, c1t0v=960, c2t0v=958" VerticalChunkCount="3" />
+				<Wire Id="955" Joints="N(954:o) h(150) v(-60) N(446:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="253 500 39.5 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="957" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0x3FE0000000000000</p.Data>
+					<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:G6" />
+				</Literal>
+				<Wire Id="958" Joints="N(957:Out) N(954:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Literal Bounds="234.5 485 58 16" DataType="Double" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="959" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>0x41B1E1A300000000</p.Data>
+					<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:G6" />
+				</Literal>
+				<Wire Id="960" Joints="N(959:Out) N(954:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="961" Joints="N(294:Value) h(27) v(45) B(2) N(53:L0) B(2) v(295) B(4) h(-5) v(40) N(963:x) B(4) N(446:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="962" Joints="N(963:1/x) N(954:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Reciprocal Bounds="238 460 30 30" Id="963" />
+				<Wire Id="974" Joints="N(446:R0) h(70) B(1) N(500:Value) B(1) v(40) N(555:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="982" Joints="N(441:R0) N(400:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1017" Joints="N(53:R0) h(6) v(-30) h(34) B(3) h(60) B(4) N(282:Y) B(4) v(125) N(441:L1) B(3) v(155) N(519:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1018" Joints="N(441:R1) h(5) v(160) N(446:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			</WhileLoop>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=54}" Height="[float]247" Id="56" Label="[UIModel]74" Left="[float]268" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]125" Width="[float]359" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="57" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]68" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.0004, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="68" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="58" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]69" Orientation="[SMOrientation]Vertical" Range="[IRange]-4, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="69" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]57" Id="59" Label="[string]Plot" VerticalScale="[UIModel]58" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="60" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="61" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="62" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="63" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="64" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="65" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="66" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="67" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]56" Height="[float]28" Id="70" Left="[float]634" Top="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]56" Height="[float]102" Id="71" Left="[float]273" MinHeight="[float]80" Top="[float]401" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]56" Height="[float]50" Id="72" Left="[float]634" MinHeight="[float]50" Top="[float]270" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]56" Height="[float]22" Id="73" Left="[float]273" Top="[float]379" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="74" LabelOwner="[UIModel]56" Left="[float]268" Text="[string]Original Signal" Top="[float]102" Width="[float]78" xmlns="http://www.ni.com/PanelCommon" />
+			<Button BaseName="[string]Stop" Content="[string]Stop" Foreground="[SMColor]#ffff0000" Height="[float]30" Id="84" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]87" Latch="[bool]True" Left="[float]129" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" Top="[float]155" Value="{DataItemBinding Id=85}" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="87" LabelOwner="[UIModel]84" Left="[float]129" Text="[string]Stop" Top="[float]132" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=257}" Height="[float]239" Id="259" Label="[UIModel]277" Left="[float]718" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]129" Width="[float]369" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="260" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]271" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 400, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="271" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="261" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]272" Orientation="[SMOrientation]Vertical" Range="[IRange]-4, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="272" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]260" Id="262" Label="[string]Real" VerticalScale="[UIModel]261" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="263" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="264" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="265" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="266" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="267" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="268" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="269" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="270" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+				<Plot HorizontalScale="[UIModel]260" Id="280" Label="[string]Imag" VerticalScale="[UIModel]261" Visibility="[SMVisibility]Visible" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]259" Height="[float]54" Id="273" Left="[float]1094" Top="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]259" Height="[float]102" Id="274" Left="[float]723" MinHeight="[float]80" Top="[float]397" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]259" Height="[float]50" Id="275" Left="[float]1094" MinHeight="[float]50" Top="[float]266" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]259" Height="[float]22" Id="276" Left="[float]723" Top="[float]375" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="277" LabelOwner="[UIModel]259" Left="[float]718" Text="[string]Transmitted with Carrier(at Carriers Sampling Frequency)" Top="[float]106" Width="[float]300" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="295" Label="[UIModel]298" Left="[float]132" MinHeight="[float]22" Top="[float]238" Value="{DataItemBinding Id=293}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="298" LabelOwner="[UIModel]295" Left="[float]132" Text="[string]Carrier Frequency" Top="[float]215" Width="[float]94" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="361" Interval="[int]1" Label="[UIModel]362" Left="[float]129" MinHeight="[float]22" Top="[float]294" Value="{DataItemBinding Id=360}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="362" LabelOwner="[UIModel]361" Left="[float]129" Text="[string]Sampling Frequency" Top="[float]271" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="366" Interval="[int]1" Label="[UIModel]367" Left="[float]129" MinHeight="[float]22" Top="[float]346" Value="{DataItemBinding Id=365}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="367" LabelOwner="[UIModel]366" Left="[float]129" Text="[string]Number of Samples" Top="[float]323" Width="[float]106" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=399}" Height="[float]227" Id="401" Label="[UIModel]419" Left="[float]268" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]442" Width="[float]359" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="402" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]413" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 400, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="413" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="403" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]414" Orientation="[SMOrientation]Vertical" Range="[IRange]-6, 5, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="414" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]402" Id="404" Label="[string]Plot" VerticalScale="[UIModel]403" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="405" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="406" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="407" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="408" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="409" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="410" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="411" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="412" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+				<Plot HorizontalScale="[UIModel]402" Id="422" Label="[string]Plot 2" VerticalScale="[UIModel]403" Visibility="[SMVisibility]Visible" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]401" Height="[float]28" Id="415" Left="[float]634" Top="[float]442" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]401" Height="[float]102" Id="416" Left="[float]273" MinHeight="[float]80" Top="[float]698" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]401" Height="[float]50" Id="417" Left="[float]634" MinHeight="[float]50" Top="[float]567" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]401" Height="[float]22" Id="418" Left="[float]273" Top="[float]676" Visible="[bool]False" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="419" LabelOwner="[UIModel]401" Left="[float]268" Text="[string]Received Signal with noise" Top="[float]419" Width="[float]140" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=499}" Height="[float]227" Id="479" Label="[UIModel]498" Left="[float]718" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]442" Width="[float]359" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="480" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]492" Orientation="[SMOrientation]Horizontal" Range="[IRange]-4, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="492" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="481" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]493" Orientation="[SMOrientation]Vertical" Range="[IRange]-4, 4, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="493" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]480" Id="482" Label="[string]Plot" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="483" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="484" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="485" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="486" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="487" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="488" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="489" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="490" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+				<Plot HorizontalScale="[UIModel]480" Id="491" Label="[string]Plot 2" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="503" Label="[string]Plot 3" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="504" Label="[string]Plot 4" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="968" Label="[string]Plot 5" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="969" Label="[string]Plot 6" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="970" Label="[string]Plot 7" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="971" Label="[string]Plot 8" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="972" Label="[string]Plot 9" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="973" Label="[string]Plot 10" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="984" Label="[string]Plot 11" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="985" Label="[string]Plot 12" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="986" Label="[string]Plot 13" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="987" Label="[string]Plot 14" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="988" Label="[string]Plot 15" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="989" Label="[string]Plot 16" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="990" Label="[string]Plot 17" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="991" Label="[string]Plot 18" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="992" Label="[string]Plot 19" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="993" Label="[string]Plot 20" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="994" Label="[string]Plot 21" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="995" Label="[string]Plot 22" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="996" Label="[string]Plot 23" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="997" Label="[string]Plot 24" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="998" Label="[string]Plot 25" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="999" Label="[string]Plot 26" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1000" Label="[string]Plot 27" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1001" Label="[string]Plot 28" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1002" Label="[string]Plot 29" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1003" Label="[string]Plot 30" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1004" Label="[string]Plot 31" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1005" Label="[string]Plot 32" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1006" Label="[string]Plot 33" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1007" Label="[string]Plot 34" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1008" Label="[string]Plot 35" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1009" Label="[string]Plot 36" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1010" Label="[string]Plot 37" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1011" Label="[string]Plot 38" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1012" Label="[string]Plot 39" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]480" Id="1013" Label="[string]Plot 40" VerticalScale="[UIModel]481" Visibility="[SMVisibility]Visible" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]479" Height="[float]28" Id="494" Left="[float]1084" Top="[float]442" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]479" Height="[float]102" Id="495" Left="[float]723" MinHeight="[float]80" Top="[float]698" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]479" Height="[float]50" Id="496" Left="[float]1084" MinHeight="[float]50" Top="[float]567" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]479" Height="[float]22" Id="497" Left="[float]723" Top="[float]676" Visible="[bool]False" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="498" LabelOwner="[UIModel]479" Left="[float]718" Text="[string]Delayed Signals" Top="[float]419" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
+			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=558}" Height="[float]269" Id="560" Label="[UIModel]578" Left="[float]268" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]690" Width="[float]809" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="561" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]572" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 1800, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="572" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="562" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]573" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 2.1000000000000002E+31, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="573" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
+				</Axis>
+				<Plot HorizontalScale="[UIModel]561" Id="563" Label="[string]Plot" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="564" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="565" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="566" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="567" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="568" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="569" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="570" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
+				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="571" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
+				<Plot HorizontalScale="[UIModel]561" Id="581" Label="[string]Plot 2" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="582" Label="[string]Plot 3" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="583" Label="[string]Plot 4" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="584" Label="[string]Plot 5" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="585" Label="[string]Plot 6" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="586" Label="[string]Plot 7" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="587" Label="[string]Plot 8" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="588" Label="[string]Plot 9" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="589" Label="[string]Plot 10" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="590" Label="[string]Plot 11" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="591" Label="[string]Plot 12" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="592" Label="[string]Plot 13" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="593" Label="[string]Plot 14" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="594" Label="[string]Plot 15" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="595" Label="[string]Plot 16" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="596" Label="[string]Plot 17" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="597" Label="[string]Plot 18" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="598" Label="[string]Plot 19" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="599" Label="[string]Plot 20" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="600" Label="[string]Plot 21" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="601" Label="[string]Plot 22" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="602" Label="[string]Plot 23" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="603" Label="[string]Plot 24" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="604" Label="[string]Plot 25" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="605" Label="[string]Plot 26" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="606" Label="[string]Plot 27" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="607" Label="[string]Plot 28" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="608" Label="[string]Plot 29" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="609" Label="[string]Plot 30" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="610" Label="[string]Plot 31" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="611" Label="[string]Plot 32" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="612" Label="[string]Plot 33" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="613" Label="[string]Plot 34" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="614" Label="[string]Plot 35" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="615" Label="[string]Plot 36" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="616" Label="[string]Plot 37" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="617" Label="[string]Plot 38" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="618" Label="[string]Plot 39" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="619" Label="[string]Plot 40" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="620" Label="[string]Plot 41" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="621" Label="[string]Plot 42" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="622" Label="[string]Plot 43" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="623" Label="[string]Plot 44" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="624" Label="[string]Plot 45" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="625" Label="[string]Plot 46" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="626" Label="[string]Plot 47" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="627" Label="[string]Plot 48" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="628" Label="[string]Plot 49" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="629" Label="[string]Plot 50" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="630" Label="[string]Plot 51" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="631" Label="[string]Plot 52" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="632" Label="[string]Plot 53" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="633" Label="[string]Plot 54" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="634" Label="[string]Plot 55" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="635" Label="[string]Plot 56" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="636" Label="[string]Plot 57" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="637" Label="[string]Plot 58" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="638" Label="[string]Plot 59" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="639" Label="[string]Plot 60" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="640" Label="[string]Plot 61" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="641" Label="[string]Plot 62" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="642" Label="[string]Plot 63" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="643" Label="[string]Plot 64" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="644" Label="[string]Plot 65" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="645" Label="[string]Plot 66" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="646" Label="[string]Plot 67" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="647" Label="[string]Plot 68" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="648" Label="[string]Plot 69" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="649" Label="[string]Plot 70" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="650" Label="[string]Plot 71" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="651" Label="[string]Plot 72" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="652" Label="[string]Plot 73" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="653" Label="[string]Plot 74" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="654" Label="[string]Plot 75" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="655" Label="[string]Plot 76" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="656" Label="[string]Plot 77" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="657" Label="[string]Plot 78" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="658" Label="[string]Plot 79" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="659" Label="[string]Plot 80" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="660" Label="[string]Plot 81" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="661" Label="[string]Plot 82" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="662" Label="[string]Plot 83" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="663" Label="[string]Plot 84" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="664" Label="[string]Plot 85" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="665" Label="[string]Plot 86" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="666" Label="[string]Plot 87" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="667" Label="[string]Plot 88" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="668" Label="[string]Plot 89" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="669" Label="[string]Plot 90" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="670" Label="[string]Plot 91" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="671" Label="[string]Plot 92" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="672" Label="[string]Plot 93" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="673" Label="[string]Plot 94" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="674" Label="[string]Plot 95" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="675" Label="[string]Plot 96" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="676" Label="[string]Plot 97" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="677" Label="[string]Plot 98" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="678" Label="[string]Plot 99" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="679" Label="[string]Plot 100" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="680" Label="[string]Plot 101" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="681" Label="[string]Plot 102" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="682" Label="[string]Plot 103" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="683" Label="[string]Plot 104" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="684" Label="[string]Plot 105" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="685" Label="[string]Plot 106" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="686" Label="[string]Plot 107" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="687" Label="[string]Plot 108" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="688" Label="[string]Plot 109" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="689" Label="[string]Plot 110" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="690" Label="[string]Plot 111" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="691" Label="[string]Plot 112" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="692" Label="[string]Plot 113" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="693" Label="[string]Plot 114" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="694" Label="[string]Plot 115" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="695" Label="[string]Plot 116" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="696" Label="[string]Plot 117" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="697" Label="[string]Plot 118" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="698" Label="[string]Plot 119" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="699" Label="[string]Plot 120" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="700" Label="[string]Plot 121" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="701" Label="[string]Plot 122" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="702" Label="[string]Plot 123" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="703" Label="[string]Plot 124" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="704" Label="[string]Plot 125" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="705" Label="[string]Plot 126" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="706" Label="[string]Plot 127" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="707" Label="[string]Plot 128" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="708" Label="[string]Plot 129" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="709" Label="[string]Plot 130" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="710" Label="[string]Plot 131" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="711" Label="[string]Plot 132" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="712" Label="[string]Plot 133" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="713" Label="[string]Plot 134" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="714" Label="[string]Plot 135" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="715" Label="[string]Plot 136" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="716" Label="[string]Plot 137" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="717" Label="[string]Plot 138" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="718" Label="[string]Plot 139" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="719" Label="[string]Plot 140" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="720" Label="[string]Plot 141" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="721" Label="[string]Plot 142" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="722" Label="[string]Plot 143" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="723" Label="[string]Plot 144" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="724" Label="[string]Plot 145" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="725" Label="[string]Plot 146" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="726" Label="[string]Plot 147" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="727" Label="[string]Plot 148" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="728" Label="[string]Plot 149" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="729" Label="[string]Plot 150" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="730" Label="[string]Plot 151" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="731" Label="[string]Plot 152" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="732" Label="[string]Plot 153" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="733" Label="[string]Plot 154" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="734" Label="[string]Plot 155" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="735" Label="[string]Plot 156" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="736" Label="[string]Plot 157" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="737" Label="[string]Plot 158" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="738" Label="[string]Plot 159" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="739" Label="[string]Plot 160" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="740" Label="[string]Plot 161" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="741" Label="[string]Plot 162" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="742" Label="[string]Plot 163" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="743" Label="[string]Plot 164" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="744" Label="[string]Plot 165" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="745" Label="[string]Plot 166" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="746" Label="[string]Plot 167" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="747" Label="[string]Plot 168" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="748" Label="[string]Plot 169" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="749" Label="[string]Plot 170" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="750" Label="[string]Plot 171" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="751" Label="[string]Plot 172" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="752" Label="[string]Plot 173" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="753" Label="[string]Plot 174" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="754" Label="[string]Plot 175" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="755" Label="[string]Plot 176" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="756" Label="[string]Plot 177" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="757" Label="[string]Plot 178" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="758" Label="[string]Plot 179" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="759" Label="[string]Plot 180" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="760" Label="[string]Plot 181" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="761" Label="[string]Plot 182" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="762" Label="[string]Plot 183" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="763" Label="[string]Plot 184" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="764" Label="[string]Plot 185" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="765" Label="[string]Plot 186" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="766" Label="[string]Plot 187" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="767" Label="[string]Plot 188" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="768" Label="[string]Plot 189" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="769" Label="[string]Plot 190" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="770" Label="[string]Plot 191" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="771" Label="[string]Plot 192" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="772" Label="[string]Plot 193" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="773" Label="[string]Plot 194" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="774" Label="[string]Plot 195" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="775" Label="[string]Plot 196" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="776" Label="[string]Plot 197" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="777" Label="[string]Plot 198" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="778" Label="[string]Plot 199" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="779" Label="[string]Plot 200" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="780" Label="[string]Plot 201" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="781" Label="[string]Plot 202" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="782" Label="[string]Plot 203" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="783" Label="[string]Plot 204" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="784" Label="[string]Plot 205" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="785" Label="[string]Plot 206" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="786" Label="[string]Plot 207" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="787" Label="[string]Plot 208" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="788" Label="[string]Plot 209" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="789" Label="[string]Plot 210" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="790" Label="[string]Plot 211" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="791" Label="[string]Plot 212" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="792" Label="[string]Plot 213" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="793" Label="[string]Plot 214" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="794" Label="[string]Plot 215" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="795" Label="[string]Plot 216" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="796" Label="[string]Plot 217" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="797" Label="[string]Plot 218" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="798" Label="[string]Plot 219" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="799" Label="[string]Plot 220" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="800" Label="[string]Plot 221" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="801" Label="[string]Plot 222" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="802" Label="[string]Plot 223" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="803" Label="[string]Plot 224" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="804" Label="[string]Plot 225" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="805" Label="[string]Plot 226" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="806" Label="[string]Plot 227" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="807" Label="[string]Plot 228" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="808" Label="[string]Plot 229" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="809" Label="[string]Plot 230" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="810" Label="[string]Plot 231" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="811" Label="[string]Plot 232" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="812" Label="[string]Plot 233" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="813" Label="[string]Plot 234" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="814" Label="[string]Plot 235" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="815" Label="[string]Plot 236" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="816" Label="[string]Plot 237" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="817" Label="[string]Plot 238" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="818" Label="[string]Plot 239" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="819" Label="[string]Plot 240" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="820" Label="[string]Plot 241" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="821" Label="[string]Plot 242" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="822" Label="[string]Plot 243" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="823" Label="[string]Plot 244" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="824" Label="[string]Plot 245" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="825" Label="[string]Plot 246" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="826" Label="[string]Plot 247" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="827" Label="[string]Plot 248" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="828" Label="[string]Plot 249" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="829" Label="[string]Plot 250" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="830" Label="[string]Plot 251" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="831" Label="[string]Plot 252" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="832" Label="[string]Plot 253" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="833" Label="[string]Plot 254" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="834" Label="[string]Plot 255" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="835" Label="[string]Plot 256" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="836" Label="[string]Plot 257" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="837" Label="[string]Plot 258" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="838" Label="[string]Plot 259" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="839" Label="[string]Plot 260" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="840" Label="[string]Plot 261" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="841" Label="[string]Plot 262" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="842" Label="[string]Plot 263" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="843" Label="[string]Plot 264" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="844" Label="[string]Plot 265" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="845" Label="[string]Plot 266" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="846" Label="[string]Plot 267" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="847" Label="[string]Plot 268" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="848" Label="[string]Plot 269" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="849" Label="[string]Plot 270" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="850" Label="[string]Plot 271" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="851" Label="[string]Plot 272" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="852" Label="[string]Plot 273" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="853" Label="[string]Plot 274" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="854" Label="[string]Plot 275" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="855" Label="[string]Plot 276" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="856" Label="[string]Plot 277" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="857" Label="[string]Plot 278" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="858" Label="[string]Plot 279" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="859" Label="[string]Plot 280" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="860" Label="[string]Plot 281" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="861" Label="[string]Plot 282" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="862" Label="[string]Plot 283" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="863" Label="[string]Plot 284" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="864" Label="[string]Plot 285" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="865" Label="[string]Plot 286" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="866" Label="[string]Plot 287" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="867" Label="[string]Plot 288" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="868" Label="[string]Plot 289" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="869" Label="[string]Plot 290" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="870" Label="[string]Plot 291" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="871" Label="[string]Plot 292" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="872" Label="[string]Plot 293" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="873" Label="[string]Plot 294" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="874" Label="[string]Plot 295" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="875" Label="[string]Plot 296" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="876" Label="[string]Plot 297" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="877" Label="[string]Plot 298" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="878" Label="[string]Plot 299" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="879" Label="[string]Plot 300" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="880" Label="[string]Plot 301" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="881" Label="[string]Plot 302" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="882" Label="[string]Plot 303" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="883" Label="[string]Plot 304" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="884" Label="[string]Plot 305" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="885" Label="[string]Plot 306" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="886" Label="[string]Plot 307" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="887" Label="[string]Plot 308" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="888" Label="[string]Plot 309" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="889" Label="[string]Plot 310" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="890" Label="[string]Plot 311" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="891" Label="[string]Plot 312" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="892" Label="[string]Plot 313" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="893" Label="[string]Plot 314" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="894" Label="[string]Plot 315" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="895" Label="[string]Plot 316" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="896" Label="[string]Plot 317" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="897" Label="[string]Plot 318" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="898" Label="[string]Plot 319" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="899" Label="[string]Plot 320" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="900" Label="[string]Plot 321" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="901" Label="[string]Plot 322" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="902" Label="[string]Plot 323" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="903" Label="[string]Plot 324" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="904" Label="[string]Plot 325" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="905" Label="[string]Plot 326" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="906" Label="[string]Plot 327" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="907" Label="[string]Plot 328" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="908" Label="[string]Plot 329" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="909" Label="[string]Plot 330" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="910" Label="[string]Plot 331" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="911" Label="[string]Plot 332" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="912" Label="[string]Plot 333" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="913" Label="[string]Plot 334" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="914" Label="[string]Plot 335" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="915" Label="[string]Plot 336" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="916" Label="[string]Plot 337" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="917" Label="[string]Plot 338" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="918" Label="[string]Plot 339" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="919" Label="[string]Plot 340" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="920" Label="[string]Plot 341" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="921" Label="[string]Plot 342" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="922" Label="[string]Plot 343" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="923" Label="[string]Plot 344" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="924" Label="[string]Plot 345" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="925" Label="[string]Plot 346" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="926" Label="[string]Plot 347" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="927" Label="[string]Plot 348" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="928" Label="[string]Plot 349" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="929" Label="[string]Plot 350" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="930" Label="[string]Plot 351" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="931" Label="[string]Plot 352" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="932" Label="[string]Plot 353" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="933" Label="[string]Plot 354" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="934" Label="[string]Plot 355" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="935" Label="[string]Plot 356" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="936" Label="[string]Plot 357" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="937" Label="[string]Plot 358" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="938" Label="[string]Plot 359" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="939" Label="[string]Plot 360" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+				<Plot HorizontalScale="[UIModel]561" Id="940" Label="[string]Plot 361" VerticalScale="[UIModel]562" Visibility="[SMVisibility]Visible" />
+			</Graph>
+			<PlotLegend Graph="[UIModel]560" Height="[float]28" Id="574" Left="[float]1084" Top="[float]690" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]560" Height="[float]102" Id="575" Left="[float]273" MinHeight="[float]80" Top="[float]988" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ScaleLegend Graph="[UIModel]560" Height="[float]50" Id="576" Left="[float]1084" MinHeight="[float]50" Top="[float]857" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<GraphTools Graph="[UIModel]560" Height="[float]22" Id="577" Left="[float]273" Top="[float]966" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="578" LabelOwner="[UIModel]560" Left="[float]268" Text="[string]Graph" Top="[float]667" Width="[float]33" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="946" Interval="[int]1" Label="[UIModel]966" Left="[float]129" MinHeight="[float]22" Top="[float]402" Value="{DataItemBinding Id=944}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="966" LabelOwner="[UIModel]946" Left="[float]129" Text="[string]Num Receivers" Top="[float]379" Width="[float]79" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="951" Label="[UIModel]967" Left="[float]129" MinHeight="[float]22" Top="[float]452" Value="{DataItemBinding Id=949}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="967" LabelOwner="[UIModel]951" Left="[float]129" Text="[string]Angle" Top="[float]429" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem AdaptToDiagramType="True" DataType="Wfm(Double)" Id="54" Name="Original Signal" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Waveform>
+					<Timestamp>60052752000;0;Utc</Timestamp>
+					<Interval>0x3FF0000000000000</Interval>
+					<Data>
+						<Array Lengths="0" />
+					</Data>
+				</Waveform>
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="85" IsLatched="True" Name="Stop" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="257" Name="Transmitted with Carrier(at Carriers Sampling Frequency)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="293" Name="Carrier Frequency" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Int32" Id="360" Name="Sampling Frequency" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Int32" Id="365" Name="Number of Samples" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="399" Name="Received Signal with noise" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0,0" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="ComplexDouble[,]" Id="499" Name="Delayed Signals" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0,0" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double[]" Id="558" Name="Graph" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="0" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Int32" Id="944" Name="Num Receivers" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="949" Name="Angle" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+		<IconTable xmlns="http://www.ni.com/PlatformFramework">
+			<p.IconModel Target="transmitted_signal\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 80 30">
+							<IconPanel Height="[float]30" Left="[float]0" Top="[float]0" Width="[float]80">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]transmitted_signal" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]24" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]74" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="noise_adder\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]noise_adder" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="Signal\ Delayer\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]40">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]Fixed" Text="[string]Signal Delayer" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6.75" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="Parameter\ Estimation_Music\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Parameter Estimation_Music" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+		</IconTable>
+	</VirtualInstrument>
+</SourceFile>
