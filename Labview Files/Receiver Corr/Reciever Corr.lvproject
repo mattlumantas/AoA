@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0B01CE3AE20117524EB1A1C4D1519F68" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B4129B3D6FE9681FD2F8D92E4B4B5DF4" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -271,6 +271,13 @@
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340840000000" Id="521">
 							<SparseEnvoyManagerDependencySource Id="522" Target=":NullTarget:AAL_Conditioning_Base\.gcomp" />
 						</SparseEnvoyManager>
+						<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="521" Id="1333" Name="NI">
+							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="521" Id="1334" Name="Analysis">
+								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="521" Id="1335" Name="Conditioning">
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1336" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Unwrap\ Phase\.gvi" StoragePath="Unwrap Phase.gvi" />
+								</NameScopingContentReference>
+							</NameScopingContentReference>
+						</NameScopingContentReference>
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,EnvoyManager" Id="525" ModelDefinitionType="SparseEnvoyManager" Name="AAL_Filtering_Base\.gcomp" Reparentable="False">
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340840000000" Id="526">
@@ -298,6 +305,10 @@
 								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="536" Id="776" Name="Generation">
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="777" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="RNGState\.gtype" StoragePath="RNGState.gtype" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="778" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Gauss\ State\.gtype" StoragePath="Gauss State.gtype" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1300" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Ramp\ Pattern\ by\ Samples\ Waveform\.gvi" StoragePath="Ramp Pattern by Samples Waveform.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1301" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Ramp\ Pattern\ by\ Samples\.gvi" StoragePath="Ramp Pattern by Samples.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1302" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Ramp\ Pattern\ by\ Increment\ Waveform\.gvi" StoragePath="Ramp Pattern by Increment Waveform.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1303" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Ramp\ Pattern\ by\ Increment\.gvi" StoragePath="Ramp Pattern by Increment.gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -487,6 +498,13 @@
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340820000000" Id="586">
 							<SparseEnvoyManagerDependencySource Id="587" Target=":NullTarget:AAL_Conditioning\.gcomp" />
 						</SparseEnvoyManager>
+						<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="586" Id="1310" Name="NI">
+							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="586" Id="1311" Name="Analysis">
+								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="586" Id="1312" Name="Conditioning">
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1313" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Zero\ Padder\ \(DBL\)\.gvi" StoragePath="Zero Padder (DBL).gvi" />
+								</NameScopingContentReference>
+							</NameScopingContentReference>
+						</NameScopingContentReference>
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,EnvoyManager" Id="590" ModelDefinitionType="SparseEnvoyManager" Name="AAL_Filtering\.gcomp" Reparentable="False">
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340820000000" Id="591">
@@ -519,6 +537,13 @@
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340820000000" Id="611">
 							<SparseEnvoyManagerDependencySource Id="612" Target=":NullTarget:AAL_Integral_Differentiation\.gcomp" />
 						</SparseEnvoyManager>
+						<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="611" Id="1357" Name="NI">
+							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="611" Id="1358" Name="Analysis">
+								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="611" Id="1359" Name="IntegralDifferentiation">
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1360" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Integral\ x\(t\)\.gvi" StoragePath="Integral x(t).gvi" />
+								</NameScopingContentReference>
+							</NameScopingContentReference>
+						</NameScopingContentReference>
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,EnvoyManager" Id="615" ModelDefinitionType="SparseEnvoyManager" Name="AAL_Interpolation\.gcomp" Reparentable="False">
 						<SparseEnvoyManager AssociatedLastWriteTime="131000340820000000" Id="616">
@@ -689,6 +714,10 @@
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1221" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Complex\ A\ x\ Vector\.gvi" StoragePath="Complex A x Vector.gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1222" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Complex\ Vector\ x\ A\.gvi" StoragePath="Complex Vector x A.gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1223" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Vector\ x\ A\.gvi" StoragePath="Vector x A.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1306" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ Vector\ Norm\.gvi" StoragePath="Real Vector Norm.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1307" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Vector\ Norm\ Type\.gtype" StoragePath="Vector Norm Type.gtype" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1308" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ Outer\ Product\.gvi" StoragePath="Real Outer Product.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1356" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ Transpose\ Matrix\.gvi" StoragePath="Real Transpose Matrix.gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -739,6 +768,7 @@
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="886" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Scaled\ Window\ for\ 1\ Chan\ \(CDB\)\.gvi" StoragePath="Scaled Window for 1 Chan (CDB).gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="887" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ma_Two\-sided\ Power\ Spectrum\ \(CDB\)\.gvi" StoragePath="ma_Two-sided Power Spectrum (CDB).gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="888" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="ma_Two\-sided\ FFT\ Spectrum\ \(CDB\)\.gvi" StoragePath="ma_Two-sided FFT Spectrum (CDB).gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1305" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Cross\ Power\ \(DBL\)\.gvi" StoragePath="Cross Power (DBL).gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
