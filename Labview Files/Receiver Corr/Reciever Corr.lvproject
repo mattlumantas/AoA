@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B4129B3D6FE9681FD2F8D92E4B4B5DF4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="733E9D8680DF17439E56D329636D3766" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -27,8 +27,8 @@
 		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.SystemDesigner.SystemDiagram.Moc,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Id="3" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Name="SystemDiagram">
 			<SystemDiagram Id="131" SystemDiagramVersion="75" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
 				<SystemDiagramRootDiagram Id="132">
-					<SystemHardware Bounds="0 0 315 213" Facade="PartsView" HasLayoutManager="True" Id="508" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop">
-						<SystemHardwareGroupDiagram Bounds="0 62 315 133" Id="509">
+					<SystemHardware Bounds="0 0 315 192" Facade="PartsView" HasLayoutManager="True" Id="508" SubLabel="$hardwareName, $modelName" SystemModelContent="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop">
+						<SystemHardwareGroupDiagram Bounds="0 62 315 112" Id="509">
 							<SystemHardware Bounds="27 0 274 112" Facade="PartsView" Id="510" SystemModelContent="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost">
 								<SystemHardwareGroupDiagram Bounds="0 0 274 63" GroupName="Ports" Id="512">
 									<SystemHardware Bounds="6 17 262 23" Facade="PartsView" Id="513" SystemModelContent="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector">
@@ -45,8 +45,8 @@
 						</SystemHardwareGroupDiagram>
 						<SystemDiagramFacadeElement Name="PartsViewLeaf" Size="315 42" />
 						<SystemDiagramFacadeElement Name="PartsView" Size="315 42" />
-						<MoveableCablingTerminal AssociatedSystemHardware="513" BackingPort="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector/ExternalPort_EthernetConnector" DataType="@cddd0bcb1aad480590ecf42cef3111b1" Hotspot="2 90" Id="514" />
-						<MoveableCablingTerminal AssociatedSystemHardware="515" BackingPort="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector/ExternalPort_UsbConnector" DataType="@cddd0bcb1aad480590ecf42cef3111b1" Hotspot="2 113" Id="516" />
+						<MoveableCablingTerminal AssociatedSystemHardware="513" BackingPort="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector/ExternalPort_EthernetConnector" DataType="@b0adf2d895ca45e6956301d23ae222c2" Hotspot="2 90" Id="514" />
+						<MoveableCablingTerminal AssociatedSystemHardware="515" BackingPort="{:/18}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector/ExternalPort_UsbConnector" DataType="@b0adf2d895ca45e6956301d23ae222c2" Hotspot="2 113" Id="516" />
 					</SystemHardware>
 				</SystemDiagramRootDiagram>
 				<EnvoyFacadeManager Id="5" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
@@ -54,7 +54,7 @@
 						<Instance Id="18" Source="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop" p9:Process.DiscoveryAddress="localhost:SystemController" p9:Process.DiscoveryUserAlias="user-PC" p9:Process.FirmwareVersion="G1ET73WW (2.09 )" p9:Process.HardwareAlias="user-PC" p9:Process.HardwareRevision="ThinkPad T430" p9:Process.IsSimulated="False" p9:Process.OperatingSystemDescription="Microsoft Windows 7 Professional  (Service Pack 1)" p9:Process.SerialNumber="PB5C1P5" p9:Process.SupportsExternalCalibration="False" p9:Process.SupportsSelfCalibration="False" p9:Process.SystemUserComment="" p9:Process.VendorName="LENOVO" p10:Process.AliasName="PC Desktop" p10:Process.ModelName="2349HH7" xmlns:p10="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p9="http://www.ni.com/SystemDesigner/Discovery" xmlns:p8="http://www.ni.com/Core/Proxy" />
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" p9:Process.AliasName="PC" p9:Process.AssociatedIdentifier="25" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
-							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector/[{http://www.ni.com/SystemDesigner/Common/SystemModel}NetworkAdapter]NetworkAdapter" p9:Process.DiscoveryAddress="localhost:nisyscfg:eth13" p9:Process.HardwareAlias="Intel(R) 82579LM Gigabit Network Connection" p9:Process.NetworkConfig.Ipv4Address="192.168.10.1" p9:Process.NetworkConfig.Ipv4RequestMode="Static" p9:Process.NetworkConfig.Ipv4SubnetMask="255.255.255.0" xmlns:p9="http://www.ni.com/SystemDesigner/Discovery" xmlns:p8="http://www.ni.com/Core/Proxy" />
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector/[{http://www.ni.com/SystemDesigner/Common/SystemModel}NetworkAdapter]NetworkAdapter" p9:Process.DiscoveryAddress="localhost:nisyscfg:eth13" p9:Process.HardwareAlias="Intel(R) 82579LM Gigabit Network Connection" p9:Process.NetworkConfig.Ipv4Address="0.0.0.0" p9:Process.NetworkConfig.Ipv4RequestMode="Static" p9:Process.NetworkConfig.Ipv4SubnetMask="0.0.0.0" xmlns:p9="http://www.ni.com/SystemDesigner/Discovery" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
 						<Instance Id="892" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Rx Multiple Synchronized Inputs.gvi" p9:Process.AssociatedIdentifier="890" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
@@ -1012,7 +1012,7 @@
 		<p.Description></p.Description>
 	</ProjectInformation>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="cddd0bcb1aad480590ecf42cef3111b1">
+		<p.TypeReference TypeId="b0adf2d895ca45e6956301d23ae222c2">
 			<Composite Id="1" Name="SystemDiagramCable" GenericTypeDefinition="Void" BaseType="Void" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
